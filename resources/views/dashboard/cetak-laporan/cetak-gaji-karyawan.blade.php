@@ -22,7 +22,7 @@
 
     <div class="container">
         <center>
-            <h1>CV. CAHAYA BINTANG</h1>
+            <h1>PT Wide Technologies</h1>
             <h1>Gaji Pegawai</h1>
             <hr>
         </center>

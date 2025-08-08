@@ -44,8 +44,13 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'employee_id'   => 'required',
             'email'         => 'required|unique:users|email',
-            'password'      => 'required|min:6|max:255',
+            'password'      => 'required|min:12|max:225|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{12,16}$/',
             'role_id'       => 'required'
+        ],[
+            'password.required' => 'Password wajib diisi',
+            'password.min' => 'Password minimal 12 karakter',
+            'password.max' => 'Password maksimal 16 karakter',
+            'password.regex' => 'Password harus mengandung: 1 huruf besar, 1 huruf kecil, 1 angka, dan 1 simbol (@$!%*?&)',
         ]);
 
         // #1 Cara dari WPU

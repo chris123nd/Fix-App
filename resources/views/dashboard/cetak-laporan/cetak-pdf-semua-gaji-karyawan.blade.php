@@ -31,7 +31,7 @@
 
     <header>
         <div class="header-text">
-            <h1>CV. CAHAYA BINTANG</h1>
+            <h1>PT Wide Technologies</h1>
             <h1>{{ $judul }}</h1>
     </header>
     <hr>

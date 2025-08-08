@@ -14,6 +14,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\SalaryController;
 use App\Http\Controllers\EmployeeSalaryController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VulnerableController;
 
 /*
 |--------------------------------------------------------------------------
@@ -136,3 +137,5 @@ Route::get('/cetak-pdf-gaji-karyawan', [CetakController::class, 'gajiKaryawanPDF
 Route::get('cetak-laporan/print-gaji-karyawan', [CetakController::class, 'printSemuaGajiKaryawan'])->middleware('auth');
 Route::get('cetak-laporan/pdf-gaji-karyawan', [CetakController::class, 'PDFSemuaGajiKaryawan'])->middleware('auth');
 Route::get('cetak-laporan/excel-gaji-karyawan', [CetakController::class, 'excelSemuaGajiKaryawan'])->middleware('auth');
+
+Route::get('/test-ssrf', [VulnerableController::class, 'fetchContent']);

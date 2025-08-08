@@ -1,11 +1,11 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
 
     @if (auth()->user()->role_id == 1)
-        <a class="navbar-brand ps-3" href="/dashboard/admin">CV. Cahaya Bintang</a>
+        <a class="navbar-brand ps-3" href="/dashboard/admin">PT Wide Technologies</a>
     @elseif (auth()->user()->role_id == 2)
-        <a class="navbar-brand ps-3" href="/dashboard/bendahara">CV. Cahaya Bintang</a>
+        <a class="navbar-brand ps-3" href="/dashboard/bendahara">PT Wide Technologies</a>
     @else
-        <a class="navbar-brand ps-3" href="/dashboard/karyawan">CV. Cahaya Bintang</a>
+        <a class="navbar-brand ps-3" href="/dashboard/karyawan">PT Wide Technologies</a>
     @endif
 
     <!-- Sidebar Toggle-->

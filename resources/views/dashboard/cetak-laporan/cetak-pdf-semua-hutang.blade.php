@@ -31,7 +31,7 @@
         {{-- <img src="{{ storage_path('img/transparan-logo-name.png') }}" alt="logo" width="150"> --}}
         {{-- <img src="{{ asset('img/transparan-logo-name.png') }}" alt="logo" width="150"> --}}
         <div class="header-text">
-            <h1>CV. CAHAYA BINTANG</h1>
+            <h1>PT Wide Technologies</h1>
             <h1>{{ $judul }}</h1>
         </div>
         <div></div>

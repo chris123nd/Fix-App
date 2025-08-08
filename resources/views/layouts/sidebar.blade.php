@@ -40,7 +40,7 @@
                 {{-- END OF TRANSAKSI --}}
 
 
-                {{-- MENU SIDEBAR INI TAMPIL UNTUK ROLE ADMIN & BENDAHARA --}}
+                {{-- MENU SIDEBAR INI TAMPIL UNTUK ROLE ADMIN & bendahara --}}
                 @if (auth()->user()->role_id == 1 || auth()->user()->role_id == 2)
                     {{-- MASTER DATA --}}
                     @if (Request::is('users*') || Request::is('hutang*') || Request::is('gaji*') || Request::is('karyawan*'))
